@@ -30,7 +30,15 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 
 
 ## A. PASCAL VOC2007 Dataset Test Results.
+- SSD is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two object detection algorithms i.e. Fast R-CNN and Faster R-CNN.
+- SSD model with image size 300x300 (Low resolution SSD300) is more accurate than Fast R-CNN. 
+- When SSD is trained on a larger 512×512 input image, it is even more accurate, surpassing Faster R-CNN by 1.7% mAP.  
 
+
+
+![VOC2007](https://drive.google.com/drive/u/0/my-drive)
+![PASCAL VOC2007 test detection results](Images/SSD_results_1.PNG)
+Both Fast and Faster R-CNN use input images whose minimum dimension is 600.The two SSD models have exactly the same settings except that they have different input sizes (300×300 vs. 512×512). It is obvious that larger input size leads to better results, and more data always helps. Data: ”07”: VOC2007 trainval, ”07+12”: union of VOC2007 and VOC2012 trainval. ”07+12+COCO”: ﬁrst train on COCO trainval35k then ﬁne-tune on 07+12.
 
 
 
