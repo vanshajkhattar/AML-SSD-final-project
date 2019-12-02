@@ -34,7 +34,7 @@ Method | VOC 2007 (07+12) Test|
 SSD 300 | 74.3
 Content in the first column | Content in the second column
 
-![VOC2007](https://drive.google.com/open?id=1iiDh8kSIA4_AgDAgGldeGCR5rhWFzljz)
+![VOC2007](https://drive.google.com/drive/u/0/my-drive)
 
 ## B. PASCAL VOC2012 Dataset Test Results
 
