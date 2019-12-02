@@ -1,4 +1,4 @@
-# 1. SSD Object Detection Algorithm Overview
+# SSD Object Detection Algorithm Overview
 ## A. Concepts
 - __Object Detection__ Object detection is a computer technology related to computer vision and image processing that deals with detecting instances of semantic objects of a certain class (such as humans, buildings, or cars) in digital images and videos.
 - __Single Shot Detection__ Single-shot models encapsulate both localization and detection tasks in a single forward sweep of the network, resulting in significantly faster detections while deployable on lighter hardware.
@@ -24,8 +24,8 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 <a href="https://imgflip.com/gif/3i652s"><img src="https://i.imgflip.com/3i652s.gif" title="made at imgflip.com"/></a>
 
 
-# 2. Research Results Summary of the SSD research paper
-## A. PASCAL VOC2007 Dataset Test Results
+# 1. Results Summary of the SSD Research Paper.
+## A. PASCAL VOC2007 Dataset Test Results.
 - Experiments in the paper are all based on VGG16, which is pre-trained on the ILSVRC CLS-LOC dataset. 
 - SSD object detection algorithm is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two famous object detection algorithms i,e, Fast R-CNN and Faster R-CNN.
 
@@ -34,13 +34,16 @@ Method | VOC 2007 (07+12) Test|
 SSD 300 | 74.3
 Content in the first column | Content in the second column
 
-# 3. Our Procedure and Results to reproduce the SSD algorithm
+## B. PASCAL VOC2012 Dataset Test Results
 
+## C. COCO test-dev2015 detectionresults.
+## D. Data Augmentation for Small Object Accuracy Results
 
-New changes in the gothub file
+# 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
 
-# 4. Measurements/Analysis
-# 5. References
+# 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
+# 4.  Discussion and References to relevant papers.
+# 5.  References.
 
 
 
