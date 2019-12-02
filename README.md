@@ -59,10 +59,30 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 ![Data Augmentation](Images/DataAUgmentation_Test.png)
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
+- Literature review of other object detection methods.
+- The SSD model implementation using deep learning framework.
+  - Program Code: 
+- Steps followed for Model implementation:
+  - Data Transforms
+  - PyTorch DataLoader
+  - Base network
+  - Auxiliary Convolutions
+  - Prediction Convolutions
+  - Prior
+  - Multi Loss
+  - Software Framework used: PyTorch
+  - Model traied on Google Colab.
+- Trained the SSD model on different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train). 
+  - 
+  - 
+- Tested the SSD model on different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
 
 # 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
+- Our analysis and Model analysis.
 # 4.  Discussion and References to relevant papers.
-# 5.  References.
+- Report for other techniques and references.
+# 5.  Results and Conclusion.
+- Our results and limitations and remedies. (Report) 
 
 
 
