@@ -24,37 +24,17 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 
 # 2. Research Results Summary of the SSD research paper
 ## A. PASCAL VOC2007 Dataset Test Results
+- Experiments in the paper are all based on VGG16, which is pre-trained on the ILSVRC CLS-LOC dataset. 
 - SSD object detection algorithm is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two famous object detection algorithms i,e, Fast R-CNN and Faster R-CNN.
 
+Method | VOC 2007 (07+12) Test|
+------------ | -------------
+SSD 300 | 74.3
+Content in the first column | Content in the second column
 
-### Markdown
+# 3. Our Procedure and Results to reproduce the SSD algorithm
+# 4. Measurements/Analysis
+# 5. References
 
-Markdown is a lightweight and easy-to-use syntax for styling your writing. It includes conventions for
 
-```markdown
-Syntax highlighted code block
 
-# Header 1
-## Header 2
-### Header 3
-
-- Bulleted
-- List
-
-1. Numbered
-2. List
-
-**Bold** and _Italic_ and `Code` text
-
-[Link](url) and ![Image](src)
-```
-
-For more details see [GitHub Flavored Markdown](https://guides.github.com/features/mastering-markdown/).
-
-### Jekyll Themes
-
-Your Pages site will use the layout and styles from the Jekyll theme you have selected in your [repository settings](https://github.com/vanshajkhattar/AML_SSD_final_project/settings). The name of this theme is saved in the Jekyll `_config.yml` configuration file.
-
-### Support or Contact
-
-Having trouble with Pages? Check out our [documentation](https://help.github.com/categories/github-pages-basics/) or [contact support](https://github.com/contact) and we’ll help you sort it out.
