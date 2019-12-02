@@ -43,20 +43,20 @@ accurate than Faster R-CNN.
 - Compared to YOLO, SSD is significantly more accurate, likely due to the use of convolutional default boxes from multiple feature maps and our
 matching strategy during training.
 
-![VOC2012](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/SSD2012test.png)
+![VOC2012](Images/SSD2012test.png)
 PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with minimum dimension 600, while the image size for YOLO is 448 × 448. data: ”07++12”: union of VOC2007 trainval and test and VOC2012 trainval.07++12+COCO”: first train on COCO trainval35k then fine-tune on 07++12.
 
 ## C. COCO test-dev2015 detection results.
 - SSD300 is better than Fast R-CNN in both mAP@0.5 and mAP@[0.5:0.95]. SSD300 has a similar mAP@0.75 as ION and Faster R-CNN, but is worse in mAP.
 - It is also observed that SSD512 is 5.3% better in mAP@0.75, but is only 1.2% better in mAP@0.5. t it has much better AP (4.8%) and AR (4.6%) for large objects, but has relatively less improvement in AP (1.3%) and AR (2.0%) for small objects.
 
-![COCO Test](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/SSD_COCO_test.png) 
+![COCO Test](Images/SSD_COCO_test.png) 
 
 ## D. Data Augmentation for Small Object Accuracy Results
 - The classification task for small objects is relatively hard for SSD.
 - The data augmentation strategy helps to improve the performance dramatically, especially on small datasets such as PASCAL VOC.
 
-![Data Augmentation](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/DataAUgmentation_Test.png)
+![Data Augmentation](Images/DataAUgmentation_Test.png)
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
 
