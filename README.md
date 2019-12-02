@@ -25,11 +25,16 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 
 
 # 1. Results Summary of the SSD Research Paper.
+## A. PASCAL VOC2007 Dataset Test Results.
 - Experiments in the paper are all based on VGG16, which is pre-trained on the ILSVRC CLS-LOC dataset. 
 - SSD object detection algorithm is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two famous object detection algorithms i,e, Fast R-CNN and Faster R-CNN.
 
-## A. PASCAL VOC2007 Dataset Test Results.
+Method | VOC 2007 (07+12) Test|
+------------ | -------------
+SSD 300 | 74.3
+Content in the first column | Content in the second column
 
+![VOC2007](https://drive.google.com/open?id=1iiDh8kSIA4_AgDAgGldeGCR5rhWFzljz)
 
 ## B. PASCAL VOC2012 Dataset Test Results
 
