@@ -80,11 +80,10 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 # 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
 - Our analysis and Model analysis.
 SSD TEst Results on VOC 2007
+
 ![Test Results on Voc2007](Images/SSD_results_3.PNG)
+
 # 4.  Discussion and References to relevant papers.
 - Report for other techniques and references.
 # 5.  Results and Conclusion.
 - Our results and limitations and remedies. (Report) 
-
-
-
