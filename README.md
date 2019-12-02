@@ -35,6 +35,10 @@ SSD 300 | 74.3
 Content in the first column | Content in the second column
 
 # 3. Our Procedure and Results to reproduce the SSD algorithm
+
+
+New changes in the gothub file
+
 # 4. Measurements/Analysis
 # 5. References
 
