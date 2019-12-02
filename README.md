@@ -53,10 +53,15 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 
 ## C. COCO test-dev2015 detection results.
 - SSD300 is better than Fast R-CNN in both mAP@0.5 and mAP@[0.5:0.95]. SSD300 has a similar mAP@0.75 as ION and Faster R-CNN, but is worse in mAP.
+- It is also observed that SSD512 is 5.3% better in mAP@0.75, but is only 1.2% better in mAP@0.5. t it has much better AP (4.8%) and AR (4.6%) for large objects, but has relatively less improvement in AP (1.3%) and AR (2.0%) for small objects.
 
 ![COCO Test](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/SSD_COCO_test.png) 
 
 ## D. Data Augmentation for Small Object Accuracy Results
+- The classification task for small objects is relatively hard for SSD.
+- The data augmentation strategy helps to improve the performance dramatically, especially on small datasets such as PASCAL VOC.
+
+![Data Augmentation](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/DataAUgmentation_Test.png)
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
 
