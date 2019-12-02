@@ -56,7 +56,7 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 - The classification task for small objects is relatively hard for SSD.
 - The data augmentation strategy helps to improve the performance dramatically, especially on small datasets such as PASCAL VOC.
 
-![Data Augmentation](Images/DataAUgmentation_Test.png)
+![Data Augmentation](Images/DataAUgmentation_Test.PNG)
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
 - Literature review of other object detection methods.
