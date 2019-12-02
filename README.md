@@ -21,6 +21,8 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 
 ![SSD_Architecture](https://miro.medium.com/max/974/1*51joMGlhxvftTxGtA4lA7Q.png)
 
+<a href="https://imgflip.com/gif/3i652s"><img src="https://i.imgflip.com/3i652s.gif" title="made at imgflip.com"/></a>
+
 
 # 2. Research Results Summary of the SSD research paper
 ## A. PASCAL VOC2007 Dataset Test Results
