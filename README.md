@@ -25,19 +25,29 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 
 
 # 1. Results Summary of the SSD Research Paper.
-- For all experiments pretrained VGG16 is used, which is pretrained on ILSVRC CLS-LOC dataset. 
-## A. PASCAL VOC2007 Dataset Test Results.
-- SSD is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two object detection algorithms i.e. Fast R-CNN and Faster R-CNN.
-- SSD model with image size 300x300 (Low resolution SSD300) is more accurate than Fast R-CNN. 
-- When SSD is trained on a larger 512×512 input image, it is even more accurate, surpassing Faster R-CNN by 1.7% mAP.  
-- 
+- Experiments in the paper are all based on VGG16, which is pre-trained on the ILSVRC CLS-LOC dataset. 
+- SSD object detection algorithm is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two famous object detection algorithms i,e, Fast R-CNN and Faster R-CNN.
 
-![PASCAL VOC2007 test detection results](Images/SSD_results_1.PNG)
-Both Fast and Faster R-CNN use input images whose minimum dimension is 600.The two SSD models have exactly the same settings except that they have different input sizes (300×300 vs. 512×512). It is obvious that larger input size leads to better results, and more data always helps. Data: ”07”: VOC2007 trainval, ”07+12”: union of VOC2007 and VOC2012 trainval. ”07+12+COCO”: ﬁrst train on COCO trainval35k then ﬁne-tune on 07+12.
+
+## A. PASCAL VOC2007 Dataset Test Results.
+
+
+
 
 ## B. PASCAL VOC2012 Dataset Test Results
+- SSD300 improves accuracy over Fast/Faster RCNN. By increasing the training and testing image size to 512×512, we are 4.5% more
+accurate than Faster R-CNN. 
+- Compared to YOLO, SSD is significantly more accurate, likely due to the use of convolutional default boxes from multiple feature maps and our
+matching strategy during training.
 
-## C. COCO test-dev2015 detectionresults.
+![VOC2012](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/SSD2012test.png)
+PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with minimum dimension 600, while the image size for YOLO is 448 × 448. data: ”07++12”: union of VOC2007 trainval and test and VOC2012 trainval.07++12+COCO”: first train on COCO trainval35k then fine-tune on 07++12.
+
+## C. COCO test-dev2015 detection results.
+- SSD300 is better than Fast R-CNN in both mAP@0.5 and mAP@[0.5:0.95]. SSD300 has a similar mAP@0.75 as ION and Faster R-CNN, but is worse in mAP.
+
+![COCO Test](https://github.com/vanshajkhattar/SSD-Single-Shot-MultiBox-Detector/blob/master/Images/SSD_COCO_test.png) 
+
 ## D. Data Augmentation for Small Object Accuracy Results
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
