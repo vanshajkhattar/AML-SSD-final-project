@@ -18,11 +18,8 @@ The SSD is a purely convolutional neural network (CNN) that we can organize into
 3. Prediction convolutions that will locate and identify objects in these feature maps.
 
 The paper demonstrates two variants of the model called the SSD300 and the SSD512. The suffixes represent the size of the input image. Although the two networks differ slightly in the way they are constructed, they are in principle the same. The SSD512 is just a larger network and results in marginally better performance.
-
+![SSD Object Detection](Images/baseball-min.gif)
 ![SSD_Architecture](https://miro.medium.com/max/974/1*51joMGlhxvftTxGtA4lA7Q.png)
-
-<a href="https://imgflip.com/gif/3i652s"><img src="https://i.imgflip.com/3i652s.gif" title="made at imgflip.com"/></a>
-
 
 # 1. Results Summary of the SSD Research Paper.
 - Experiments in the paper are all based on VGG16, which is pre-trained on the ILSVRC CLS-LOC dataset. 
