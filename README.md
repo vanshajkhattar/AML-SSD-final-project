@@ -49,9 +49,11 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 
 ![COCO Test](Images/SSD_COCO_test.png) 
 
-## D. Data Augmentation for Small Object Accuracy Results
-- The classification task for small objects is relatively hard for SSD.
+## D. Data Augmentation for improving Small Object Accuracy Results
+- Without a follow-up feature resampling step as in Faster R-CNN, the classification task for small objects is relatively hard for SSD.
 - The data augmentation strategy helps to improve the performance dramatically, especially on small datasets such as PASCAL VOC.
+-Zoom in and zoom out operation trick is used that creates more training examples
+- There is a consistent increase of 2%-3% mAP across multiple datasets, as shown in Table below. In specific, it shows that the new augmentation trick significantly improves the performance on small objects
 
 ![Data Augmentation](Images/DataAUgmentation_Test.png)
 
