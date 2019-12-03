@@ -58,23 +58,26 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 ![Data Augmentation](Images/DataAUgmentation_Test.png)
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
-- Literature review of other object detection methods.
-- The SSD model implementation using deep learning framework.
+- Literature review was done of other object detection methods like R-CNN, Faster R-CNN and YOLO(You Only Look Once).
+- The SSD model implementation is done using deep learning framework. For model building, we referred 2 open source codes on github.
+  - Open Source Codes Referred - 
+     -https://github.com/amdegroot/ssd.pytorch     
+     -https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection
   - Program Code: 
 - Steps followed for Model implementation:
   - Data Transforms
   - PyTorch DataLoader
-  - Base network
+  - Base network(VGG 16 is used as the base network)
   - Auxiliary Convolutions
   - Prediction Convolutions
   - Prior
   - Multi Loss
   - Software Framework used: PyTorch
   - Model traied on Google Colab.
-- Trained the SSD model on different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train). 
+- Trained the SSD model on two different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train). 
   - 
   - 
-- Tested the SSD model on different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
+- Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
 
 # 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
 - Our analysis and Model analysis.
@@ -83,6 +86,57 @@ SSD TEst Results on VOC 2007
 ![Test Results on Voc2007](Images/SSD_results_3.PNG)
 
 # 4.  Discussion and References to relevant papers.
-- Report for other techniques and references.
+- Object detection is the combined task of object localization (providing bounding boxes) and classification (labelling), in an Image. The basic Convolutional Neural Network (CNN) architecture for it being VGG16 [1]. Object detection falls into two broad categories- region based and classification/regression methods. A thorough study of the same is presented in [1]. 
+
+- Region proposal-based methods mimics the technique adopted by human brain which takes a glimpse of the overall picture and then concentrates on the region of interest.  
+
+- There is a plethora of these methods, but discussion in onto methods Region with CNN feature (R-CNN) [2], Spatial Pyramid Pooling Network (SPP-Net) [3], Fast R-CNN [4] and Faster R-CNN [5].  
+
+- R-CNN [2] does a selective search to obtains region proposals, generates feature map using CNN and classifies the region using a linear SVM. Its advantages are increased accuracy due to high capacity CNN, and reduction in the search space owing to supervised training for classification and subsequently fine tuning for detection task. Its main disadvantage is content losses, due to fixed size input (for fully connected layers), when the objects occurs at different scales.  
+
+- This is overcome by spatial pyramid matching architecture in SPP-Net [3], which uses quantization of a fine to coarse region, at different scales. Thus, leading to an increase in speed and detection efficiency at testing period. The limitation of this method is its accuracy as it has fixed convolutional network layer. 
+
+- Fast R-CNN [4] shows an improvement in the speed (training and testing) and accuracy, owing to the aspect of no feature caching and all the network layers being updated during training (single-stage) respectively. 
+
+- Faster R-CNN [5] architecture includes a region proposal network prior to that in Fast R-CNN. This unified frame work achieves good accuracy for near real-time frame rates. 
+
+- Though classification and regression forms integral part of the region-based method, there is a single step framework based on global regression/classification which maps image pixels to bounding box coordinates and class probabilities. These fall under the umbrella of regression/classification methods for object detection. YOLO [6] and Single Shot MultiBox Detector (SSD) [7] are two classic methods under this category. 
+
+- You Only Look Once (YOLO) [6] initially resizes the image which is fed as input to a single convolutional network. It detects objects based on confidence scores specific to a class, both at one go. This leads to an extremely fast detection but cannot handle images of unusual aspect ratio (due to several down sampling layers) as well as small objects appearing in groups (due to space constraint on bounding boxes). 
+
+- This speed-accuracy trade-off is circumvented by a method termed as SSD [7]. This is accomplished by adding several feature layers at the end, VGG16 forming the backbone network, former which can conveniently make predictions and the associated probabilities on the bounding box offset, thus tackling the problem arising out of varying scales and aspect ratios. Thus, providing increased speed and accuracy more than YOLO, even when the input image is of smaller size. Some of the limitations of SSD are to improve accuracy, data augmentation is very much essential, a greater number of default boxes are needed, and atrous convolution is needed at the last two layers in the VGG16 used therein, without which the model tends to be slower. Application of SSD, the state-of- the art technique for object detection is currently being studied for object tracking also. 
+
+ 
+
+## References: 
+
+[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  https://arxiv.org/pdf/1807.05511 
+
+ 
+
+[2] R. Girshick, J. Donahue, T. Darrell, and J. Malik, "Rich feature hierarchies for accurate object detection and semantic segmentation." Proceedings of the IEEE conference on Computer Vision and Pattern Recognition. 2014. https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf 
+
+  
+
+[3] He, Kaiming, et al. "Spatial pyramid pooling in deep convolutional networks for visual recognition." IEEE transactions on pattern analysis and machine intelligence 37.9 (2015): 1904-1916. https://arxiv.org/abs/1406.4729 
+
+ 
+[4] R. Girshick, “Fast r-cnn,”, ICCV, 2015. https://arxiv.org/pdf/1504.08083 
+
+ 
+
+[5] S. Ren, K. He, R. Girshick, and J. Sun, “Faster r-cnn: Towards realtime object detection with region proposal networks,” in NIPS, 2015, pp. 91–99.  https://arxiv.org/pdf/1506.01497 
+
+ 
+
+[6] J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, “You only look once: Unified, real-time object detection,” CVPR, 2016. https://arxiv.org/abs/1506.02640 
+
+ 
+
+[7] W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y. Fu, and A. C. Berg, “Ssd: Single shot multibox detector,” ECCV, 2016.  https://arxiv.org/abs/1512.02325 
+
+ 
+
+ 
 # 5.  Results and Conclusion.
 - Our results and limitations and remedies. (Report) 
