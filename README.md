@@ -18,7 +18,9 @@ The SSD is a purely convolutional neural network (CNN) that we can organize into
 3. Prediction convolutions that will locate and identify objects in these feature maps.
 
 The paper demonstrates two variants of the model called the SSD300 and the SSD512. The suffixes represent the size of the input image. Although the two networks differ slightly in the way they are constructed, they are in principle the same. The SSD512 is just a larger network and results in marginally better performance.
-           ![SSD Object Detection](Images/baseball-min.gif)
+          
+          
+          ![SSD Object Detection](Images/baseball-min.gif)
 ![SSD_Architecture](https://miro.medium.com/max/974/1*51joMGlhxvftTxGtA4lA7Q.png)
 
 # 1. Results Summary of the SSD Research Paper.
@@ -27,6 +29,7 @@ The paper demonstrates two variants of the model called the SSD300 and the SSD51
 
 ## A. PASCAL VOC2007 Dataset Test Results.
 - SSD is tested on PASCAL VOC 2007 daataset(4952 images). These results are comparaed against two object detection algorithms i.e. Fast R-CNN and Faster R-CNN.
+- This data contains images with twenty different types of objects {'aeroplane', 'bicycle', 'bird', 'boat', 'bottle', 'bus', 'car', 'cat', 'chair', 'cow', 'diningtable', 'dog', 'horse', 'motorbike', 'person', 'pottedplant', 'sheep', 'sofa', 'train', 'tvmonitor'}
 - SSD model with input image size 300x300 (SSD300) is more accurate than Fast R-CNN. 
 - When SSD is trained on a larger 512×512 input image (SSD512), it is even more accurate, surpassing Faster R-CNN by 1.7% mAP.  
 - SSD model trained with more data (VOC 07+12), SSD300 is performed better than Faster R-CNN by 1.1% and that SSD512 is 3.6% better. 
@@ -58,32 +61,40 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 ![Data Augmentation](Images/DataAUgmentation_Test.png)
 
 # 2.  Procedure taken to Reproduce the Results.(Our Procedure and Results to reproduce the SSD algorithm)
-- Literature review was done of other object detection methods like R-CNN, Faster R-CNN and YOLO(You Only Look Once).
-- The SSD model implementation is done using deep learning framework. For model building, we referred 2 open source codes on github.
+- __Step1__  Literature review was done of other object detection methods like R-CNN, Faster R-CNN and YOLO(You Only Look Once).
+- __Step2__ The SSD model implementation is done using deep learning framework. For model building, we referred 2 open source codes on github.
   - Open Source Codes Referred - 
      -https://github.com/amdegroot/ssd.pytorch     
      -https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection
-  - Program Code: 
-- Steps followed for Model implementation:
-  - Data Transforms
-  - PyTorch DataLoader
-  - Base network(VGG 16 is used as the base network)
-  - Auxiliary Convolutions
-  - Prediction Convolutions
-  - Prior
-  - Multi Loss
-  - Software Framework used: PyTorch
-  - Model traied on Google Colab.
-- Trained the SSD model on two different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train). 
-  - 
-  - 
-- Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
+ - __Step3__  __Building model in PyTorch__
+       - __A. Inputs to the model__
+           There are three inputs to our SSD model: Images, ground truth object bounding boxes and Object's labels
+       - __B.Data Pipeline__
+          Our data is divided into training and test splits. 
+       - __Steps followed for model implementation-__
+                      - Data Transforms
+                      - PyTorch DataLoader
+                      - Base network(VGG 16 is used as the base network)
+                      - Auxiliary Convolutions
+                      - Prediction Convolutions
+                      - Prior
+                      - Multi Loss
+                      - Software Framework used: PyTorch
+                      - Model trained on Google Colab.
+
+  
+- __Step4__ __Training-__
+           - Trained the SSD model on two different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train) using google colab GPU. 
+           - In the paper, authors used Stochastic Gradient Descent in batches of 32 images, with an initial learning rate of 1e−3, momentum of 0.9, and 5e-4 weight decay. We used a batch size of 8 images for increased stability.
+-__Step5__ Testing
+Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
 
 # 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
 - Our analysis and Model analysis.
 SSD TEst Results on VOC 2007
 
 ![Test Results on Voc2007](Images/SSD_results_3.PNG)
+- After training our SSD model, and testing it on bot PASCAL VOC datasets, we found that our accuracy and mAP were very close to the results that the authors got.
 
 # 4.  Discussion and References to relevant papers.
 - Object detection is the combined task of object localization (providing bounding boxes) and classification (labelling), in an Image. The basic Convolutional Neural Network (CNN) architecture for it being VGG16 [1]. Object detection falls into two broad categories- region based and classification/regression methods. A thorough study of the same is presented in [1]. 
