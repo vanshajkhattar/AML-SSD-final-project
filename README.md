@@ -67,25 +67,26 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
      -https://github.com/amdegroot/ssd.pytorch     
      -https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection
 - __Step3__  __Building model in PyTorch__
-      - __A. Inputs to the model__
+  - __A. Inputs to the model__
            There are three inputs to our SSD model: Images, ground truth object bounding boxes and Object's labels
-      - __B.Data Pipeline__
+  - __B.Data Pipeline__
           Our data is divided into training and test splits. 
-      - __Steps followed for model implementation-__
-                      - Data Transforms
-                      - PyTorch DataLoader
-                      - Base network(VGG 16 is used as the base network)
-                      - Auxiliary Convolutions
-                      - Prediction Convolutions
-                      - Prior
-                      - Multi Loss
-                      - Software Framework used: PyTorch
-                      - Model trained on Google Colab.
+  - __Steps followed for model implementation-__
+   - Data Transforms
+   - PyTorch DataLoader
+   - Base network(VGG 16 is used as the base network)
+   - Auxiliary Convolutions
+   - Prediction Convolutions
+   - Prior
+   - Multi Loss
+   - Software Framework used: PyTorch
+   - Model trained on Google Colab.
 - __Step4__ __Training-__
-           - Trained the SSD model on two different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train) using google colab GPU. 
-           - In the paper, authors used Stochastic Gradient Descent in batches of 32 images, with an initial learning rate of 1e−3, momentum of 0.9, and 5e-4 weight decay. We used a batch size of 8 images for increased stability.
--__Step5__ Testing
-Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
+      - Trained the SSD model on two different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train) using google colab GPU. 
+      - In the paper, authors used Stochastic Gradient Descent in batches of 32 images, with an initial learning rate of 1e−3, momentum of 0.9, and 5e-4 weight decay. We used a batch size of 8 images for increased stability.
+- __Step5__ Testing and evaluation
+ - Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
+ - Parsed predictions are evaluated against the ground truth objects. The evaluation metric is the Mean Average Precision (mAP).
 
 # 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
 - Our analysis and Model analysis.
