@@ -85,8 +85,8 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
       - Trained the SSD model on two different datasets (PASCALVOC2007 Train, PASCALVOC2012 Train) using google colab GPU. 
       - In the paper, authors used Stochastic Gradient Descent in batches of 32 images, with an initial learning rate of 1e−3, momentum of 0.9, and 5e-4 weight decay. We used a batch size of 8 images for increased stability.
 - __Step5__ Testing and evaluation
- - Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
- - Parsed predictions are evaluated against the ground truth objects. The evaluation metric is the Mean Average Precision (mAP).
+  - Tested the SSD model on two different datasets. (PASCAL VOC2007 Test, PASCAL VOC2012 Test).
+  - Parsed predictions are evaluated against the ground truth objects. The evaluation metric is the Mean Average Precision (mAP).
 
 # 3.  Describes measurements and/or analysis of what was discovered when attempting to reproduce result.
 - Our analysis and Model analysis.
