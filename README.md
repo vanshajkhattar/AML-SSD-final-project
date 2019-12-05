@@ -63,8 +63,8 @@ PASCAL VOC2012 test detection results. Fast and Faster R-CNN use images with min
 - __Step1__  Literature review was done of other object detection methods like R-CNN, Faster R-CNN and YOLO(You Only Look Once).
 - __Step2__ The SSD model implementation is done using deep learning framework. For model building, we referred 2 open source codes on github.
   - Open Source Codes Referred - 
-     -https://github.com/amdegroot/ssd.pytorch     
-     -https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection
+     -[](https://github.com/amdegroot/ssd.pytorch)     
+     -[](https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Object-Detection)
 - __Step3__  __Building model in PyTorch__
   - __A. Inputs to the model__
            There are three inputs to our SSD model: Images, ground truth object bounding boxes and Object's labels
@@ -127,23 +127,23 @@ SSD TEst Results on VOC 2007
 
 References: 
 
-[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  https://arxiv.org/pdf/1807.05511 
+[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  [](https://arxiv.org/pdf/1807.05511) 
 
  
 
-[2] R. Girshick, J. Donahue, T. Darrell, and J. Malik, "Rich feature hierarchies for accurate object detection and semantic segmentation." Proceedings of the IEEE conference on Computer Vision and Pattern Recognition. 2014. https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf 
+[2] R. Girshick, J. Donahue, T. Darrell, and J. Malik, "Rich feature hierarchies for accurate object detection and semantic segmentation." Proceedings of the IEEE conference on Computer Vision and Pattern Recognition. 2014. [](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) 
 
   
 
-[3] He, Kaiming, et al. "Spatial pyramid pooling in deep convolutional networks for visual recognition." IEEE transactions on pattern analysis and machine intelligence 37.9 (2015): 1904-1916. https://arxiv.org/abs/1406.4729 
+[3] He, Kaiming, et al. "Spatial pyramid pooling in deep convolutional networks for visual recognition." IEEE transactions on pattern analysis and machine intelligence 37.9 (2015): 1904-1916. [](https://arxiv.org/abs/1406.4729) 
 
  
 
-[4] R. Girshick, “Fast r-cnn,”, ICCV, 2015. https://arxiv.org/pdf/1504.08083 
+[4] R. Girshick, “Fast r-cnn,”, ICCV, 2015. [](https://arxiv.org/pdf/1504.08083) 
 
  
 
-[5] S. Ren, K. He, R. Girshick, and J. Sun, “Faster r-cnn: Towards realtime object detection with region proposal networks,” in NIPS, 2015, pp. 91–99.  https://arxiv.org/pdf/1506.01497 
+[5] S. Ren, K. He, R. Girshick, and J. Sun, “Faster r-cnn: Towards realtime object detection with region proposal networks,” in NIPS, 2015, pp. 91–99.  [](https://arxiv.org/pdf/1506.01497) 
 
  
 
