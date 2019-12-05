@@ -128,31 +128,31 @@ SSD TEst Results on VOC 2007
 
 References: 
 
-[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  [gfds](https://arxiv.org/pdf/1807.05511) 
+[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  [paper](https://arxiv.org/pdf/1807.05511) 
 
  
 
-[2] R. Girshick, J. Donahue, T. Darrell, and J. Malik, "Rich feature hierarchies for accurate object detection and semantic segmentation." Proceedings of the IEEE conference on Computer Vision and Pattern Recognition. 2014. [](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) 
+[2] R. Girshick, J. Donahue, T. Darrell, and J. Malik, "Rich feature hierarchies for accurate object detection and semantic segmentation." Proceedings of the IEEE conference on Computer Vision and Pattern Recognition. 2014. [paper](https://www.cv-foundation.org/openaccess/content_cvpr_2014/papers/Girshick_Rich_Feature_Hierarchies_2014_CVPR_paper.pdf) 
 
   
 
-[3] He, Kaiming, et al. "Spatial pyramid pooling in deep convolutional networks for visual recognition." IEEE transactions on pattern analysis and machine intelligence 37.9 (2015): 1904-1916. [](https://arxiv.org/abs/1406.4729) 
+[3] He, Kaiming, et al. "Spatial pyramid pooling in deep convolutional networks for visual recognition." IEEE transactions on pattern analysis and machine intelligence 37.9 (2015): 1904-1916. [paper](https://arxiv.org/abs/1406.4729) 
 
  
 
-[4] R. Girshick, “Fast r-cnn,”, ICCV, 2015. [](https://arxiv.org/pdf/1504.08083) 
+[4] R. Girshick, “Fast r-cnn,”, ICCV, 2015. [paper](https://arxiv.org/pdf/1504.08083) 
 
  
 
-[5] S. Ren, K. He, R. Girshick, and J. Sun, “Faster r-cnn: Towards realtime object detection with region proposal networks,” in NIPS, 2015, pp. 91–99.  [](https://arxiv.org/pdf/1506.01497) 
+[5] S. Ren, K. He, R. Girshick, and J. Sun, “Faster r-cnn: Towards realtime object detection with region proposal networks,” in NIPS, 2015, pp. 91–99.  [paper](https://arxiv.org/pdf/1506.01497) 
 
  
 
-[6] J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, “You only look once: Unified, real-time object detection,” CVPR, 2016. https://arxiv.org/abs/1506.02640 
+[6] J. Redmon, S. Divvala, R. Girshick, and A. Farhadi, “You only look once: Unified, real-time object detection,” CVPR, 2016. [paper](https://arxiv.org/abs/1506.02640) 
 
  
 
-[7] W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y. Fu, and A. C. Berg, “Ssd: Single shot multibox detector,” ECCV, 2016.  https://arxiv.org/abs/1512.02325 
+[7] W. Liu, D. Anguelov, D. Erhan, C. Szegedy, S. Reed, C.-Y. Fu, and A. C. Berg, “Ssd: Single shot multibox detector,” ECCV, 2016.  [paper](https://arxiv.org/abs/1512.02325) 
 
  
 
