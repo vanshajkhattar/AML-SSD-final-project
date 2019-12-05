@@ -127,7 +127,7 @@ SSD TEst Results on VOC 2007
 
 References: 
 
-[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  [](https://arxiv.org/pdf/1807.05511) 
+[1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  [gfds](https://arxiv.org/pdf/1807.05511) 
 
  
 
