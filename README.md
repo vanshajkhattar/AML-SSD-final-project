@@ -95,7 +95,11 @@ SSD TEst Results on VOC 2007
 - After training our SSD model, and testing it on bot PASCAL VOC datasets, we found that our accuracy and mAP were very close to the results that the authors got.
 
 # 4.  Discussion and References to relevant papers.
-- Object detection is the combined task of object localization (providing bounding boxes) and classification (labelling), in an Image. The basic Convolutional Neural Network (CNN) architecture for it being VGG16 [1]. Object detection falls into two broad categories- region based and classification/regression methods. A thorough study of the same is presented in [1]. 
+- Object detection is the combined task of object localization (providing bounding boxes) and classification (labelling), in an Image. Typical Convolutional Neural Network (CNN) architecture, VGG16  [1] is the most representative model for deep learning.  
+
+- VGG16 [1] architecture constitutes of multiple layers (13 conv. layers, 3 fully connected layers with softmax activation for classification, 3 max. pooling layers and 2 stride max pooling layers; where each layer is termed as a feature map. The input is an image constituting a three-dimensional matrix of pixel intensities of RGB.  Filtering and Pooling are the transformation operations performed on the feature maps. Every neuron of a particular layer is connected to a fraction of neurons of the previous layer termed as the receptive filed. Filtering is the process of convolution of filter coefficients with the receptive field and its output passes through a nonlinear function such as ReLU/Sigmoid to obtain its overall response. Pooling type may be max, average or of L2. Pooling with local contrast normalization gives a single value which represents the robust feature description. The overall architecture intertwines filtering and pooling, which can be fine-tuned using fully connected layers by supervised learning methods. Based on different tasks, activation function at the output layer, categorizes the pixel. The network is optimized on an objective function (mean-squared error, cross -entropy loss) suing Stochastic Gradient Descent method.  This architecture which combinedly optimizes the problem of classification and regression, provides a good expressive capability and allows us to solve computer vision problems using a different perspective. 
+
+- Object detection falls into two broad categories- region based and classification/regression methods. A thorough study of the same is presented in [1]. 
 
 - Region proposal-based methods mimics the technique adopted by human brain which takes a glimpse of the overall picture and then concentrates on the region of interest.  
 
@@ -113,11 +117,15 @@ SSD TEst Results on VOC 2007
 
 - You Only Look Once (YOLO) [6] initially resizes the image which is fed as input to a single convolutional network. It detects objects based on confidence scores specific to a class, both at one go. This leads to an extremely fast detection but cannot handle images of unusual aspect ratio (due to several down sampling layers) as well as small objects appearing in groups (due to space constraint on bounding boxes). 
 
-- This speed-accuracy trade-off is circumvented by a method termed as SSD [7]. This is accomplished by adding several feature layers at the end, VGG16 forming the backbone network, former which can conveniently make predictions and the associated probabilities on the bounding box offset, thus tackling the problem arising out of varying scales and aspect ratios. Thus, providing increased speed and accuracy more than YOLO, even when the input image is of smaller size. Some of the limitations of SSD are to improve accuracy, data augmentation is very much essential, a greater number of default boxes are needed, and atrous convolution is needed at the last two layers in the VGG16 used therein, without which the model tends to be slower. Application of SSD, the state-of- the art technique for object detection is currently being studied for object tracking also. 
+- This speed-accuracy trade-off is circumvented by a method termed as SSD [7]. This is accomplished by adding several feature layers at the end, VGG16 forming the backbone network, the additional layers can conveniently make predictions and determine the associated probabilities on the bounding box offset, thus tackling the problem arising out of varying scales and aspect ratios.  
+
+- A set of grids is created on an input image. A couple of rectangles of different aspect ratios are made around those grids. Filtering operation is carried out in the region described by the bounding box in order find the presence of an object. The size of the image gets reduced drastically at the layers present at the end. The operations of convolution and detection is carried out at every step, such that even the smaller objects get easily identified. The SSD algorithm also knows how to go back from one convolution operation to another. It not only learns to go forward but backwards too.  
+
+- Thus, providing increased speed and accuracy more than YOLO, even when the input image is of smaller size. Some of the limitations of SSD are to improve accuracy, data augmentation is very much essential, a greater number of default boxes are needed, and atrous convolution is needed at the last two layers in the VGG16 used therein, without which the model tends to be slower. Application of SSD, the state-of- the art technique for object detection is currently being studied for object tracking also. 
 
  
 
-## References: 
+References: 
 
 [1] Z.-Q. Zhao, P. Zheng, S.-T. Xu, and X. Wu, ‘‘Object detection with deep learning: A review,’’ IEEE Trans. on Neural Networks and Learning Systems, Volume: 30, Issue: 11 , Nov. 2019.  https://arxiv.org/pdf/1807.05511 
 
@@ -130,6 +138,7 @@ SSD TEst Results on VOC 2007
 [3] He, Kaiming, et al. "Spatial pyramid pooling in deep convolutional networks for visual recognition." IEEE transactions on pattern analysis and machine intelligence 37.9 (2015): 1904-1916. https://arxiv.org/abs/1406.4729 
 
  
+
 [4] R. Girshick, “Fast r-cnn,”, ICCV, 2015. https://arxiv.org/pdf/1504.08083 
 
  
@@ -146,6 +155,7 @@ SSD TEst Results on VOC 2007
 
  
 
+ 
  
 # 5.  Results and Conclusion.
 - Our results and limitations and remedies. (Report) 
